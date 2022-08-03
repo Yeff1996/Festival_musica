@@ -1,0 +1,28 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.boletos{
+    padding: 5rem 0;
+    background-color: v.$verde;
+
+    &__heading{
+        text-align: center;
+        color: v.$blanco;
+        font-weight: 700;
+        margin-bottom: 3rem;
+    }
+
+    &__grid{
+        width: 95%;
+        max-width: 80rem;
+        margin: 0 auto;
+        display: grid;
+        align-items: center;
+        gap: 2rem;
+
+        @include m.tablet { 
+            grid-template-columns: repeat(3, 1fr);
+            gap: unset;
+        } 
+    }
+}

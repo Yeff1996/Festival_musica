@@ -1,0 +1,51 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.video{
+    max-height: 70rem;
+    min-height: 50rem;
+    overflow: hidden;
+    position: relative;
+
+    &__video{
+        display: block;
+        width: auto;
+
+        @include m.desktop { 
+            width: 100%;
+        } 
+    }
+
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, rgba(126,2,195,0.5) 0%, rgba(255,0,110,0.3) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__contenido{
+    }
+
+    &__heading{
+        color: v.$blanco;
+        font-size: 7rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__ubicacion{
+        padding: .5rem 1rem;
+        margin: 0;
+        background-color: v.$rosa;
+        color: v.$blanco;
+        font-size: 2.5rem;
+        font-weight: 700;
+        display: inline-block;
+    }
+}

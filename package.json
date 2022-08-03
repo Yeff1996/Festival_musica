@@ -1,0 +1,28 @@
+{
+  "name": "festival de musica",
+  "version": "1.0.0",
+  "description": "festival de música, BEM, SASS, Gulp, CSS Grid, javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yeferson Mendoza",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.0.7",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-libsquoosh": "^1.1.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser-js": "^5.2.2",
+    "sass": "^1.52.1",
+    "terser": "^4.8.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ]
+}

@@ -1,0 +1,77 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.boleto{
+    padding: 2rem;
+    background-color: v.$blanco;
+    border-radius: 2rem;
+    text-align: center;
+    transition-property: transform;
+    transition-duration: .3s;
+
+    @include m.tablet { 
+        min-height: 44rem;
+        &:hover{
+            transform: scale(1.2);
+        }
+    } 
+    
+
+
+    &__VIP{
+        background-color: v.$rosa;
+        padding: 4rem 2rem;
+        color: v.$blanco;
+        grid-row: 1 / 2;
+        z-index: 10;
+
+        @include m.tablet { 
+            grid-column: 2 / 3;
+        } 
+    }
+
+    &__premium{
+        grid-row: 2 / 3;
+
+        @include m.tablet { 
+            grid-row: 1 / 2;
+        } 
+    }
+
+    &__simple{
+        min-height: 52.7rem;
+    }
+
+    &__heading{
+        font-weight: 700;
+        font-size: 2.6rem;
+    }
+
+    &__precio{
+        font-weight: 900;
+        font-size: 2rem;
+    }
+    &__texto{
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+
+    &__enlace{
+        font-weight: 400;
+        font-size: 1.8;
+        padding: 1rem 0;
+    }
+
+    &__boton{
+        @include m.boton(v.$rosa, v.$blanco);
+        width: 100%;
+
+        &--VIP{
+            border: 2px solid v.$blanco;
+        }
+
+        &--simple{
+            margin-top: 6rem;
+        }
+    }
+}

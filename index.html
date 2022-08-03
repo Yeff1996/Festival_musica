@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__grid contenedor">
+            <h1 class="header__heading">Rock & EDM Festival</h1>
+
+            <nav class="header__nav">
+                <a href="#artistas" class="header__enlace">LineUp</a>
+                <a href="#galeria" class="header__enlace">Galeria</a>
+                <a href="#boletos" class="header__enlace">Boletos</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="video">
+        <video class="video__video" autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+
+        <div class="overlay">
+            <div class="overlay__contenido contenedor">
+                <h2 class="overlay__heading">Rock & EDM Festival</h2>
+                <p class="overlay__ubicacion">
+                    Agosto 2022 - Caracas, Venezuela
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre-festival contenedor">
+        <div class="sobre-festival__imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img loading="lazy" src="build/img/imagen_vocalista.jpg" alt="" width="500" height="300">
+            </picture>
+        </div>
+
+        <div class="sobre-festival__contenido">
+            <h2 class="sobre-festival__heading">Rock & EDM Festival</h2>
+            <p class="sobre-festival__ubicacion">Agosto 2022 - Caracas, Venezuela</p>
+            <p class="sobre-festival__texto">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor expedita nulla 
+                dignissimos repellendus corporis excepturi enim eum? Tenetur rerum excepturi 
+                natus dicta ullam sit, fuga asperiores maxime distinctio rem doloremque?
+            </p>
+        </div>
+    </section>
+
+    <section id="artistas" class="artistas">
+        <h2 class="artistas__heading">LineUp</h2>
+
+        <div class="artistas_container contenedor">
+            <p class="artistas__dia">Viernes 21</p>
+
+            <div class="artistas__grid">
+                <div class="escenario escenario--amarillo">
+                    <p class="escenario__titulo escenario__titulo--rock">Escenario Rock</p>
+
+                    <ul class="escenario__lista escenario__lista--amarillo">
+                        <li class="escenario__li">
+                            24:00 | <span class="escenario__artista">Metallica</span>
+                        </li>
+                        <li class="escenario__li">
+                            22:00 | <span class="escenario__artista">Pearl Jam</span>
+                        </li>
+                        <li class="escenario__li">
+                            20:00 | <span class="escenario__artista">KoRn</span>
+                        </li>
+                        <li class="escenario__li">
+                            19:00 | <span class="escenario__artista">Muse</span>
+                        </li>
+                        <li class="escenario__li">
+                            18:00 | <span class="escenario__artista">Breaking Benjamin</span>
+                        </li>
+                        <li class="escenario__li">
+                            17:00 | <span class="escenario__artista">30 Seconds to Mars</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="escenario escenario--verde">
+                    <p class="escenario__titulo escenario__titulo--edm">Escenario EDM</p>
+
+                    <ul class="escenario__lista escenario__lista--verde">
+                        <li class="escenario__li">
+                            24:00 | <span class="escenario__artista">Deadmau5</span>
+                        </li>
+                        <li class="escenario__li">
+                            22:00 | <span class="escenario__artista">Tiesto</span>
+                        </li>
+                        <li class="escenario__li">
+                            20:00 | <span class="escenario__artista">Hardwell</span>
+                        </li>
+                        <li class="escenario__li">
+                            19:00 | <span class="escenario__artista">Dash Berlin</span>
+                        </li>
+                        <li class="escenario__li">
+                            18:00 | <span class="escenario__artista">Fedde Legrand</span>
+                        </li>
+                        <li class="escenario__li">
+                            17:00 | <span class="escenario__artista">Audien</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <p class="artistas__dia">Sabado 22</p>
+
+            <div class="artistas__grid">
+                <div class="escenario escenario--verde">
+                    <p class="escenario__titulo escenario__titulo--rock">Escenario Rock</p>
+
+                    <ul class="escenario__lista escenario__lista--verde">
+                        <li class="escenario__li">
+                            24:00 | <span class="escenario__artista">Red Hot Chili Peppers</span>
+                        </li>
+                        <li class="escenario__li">
+                            22:00 | <span class="escenario__artista">The Killers</span>
+                        </li>
+                        <li class="escenario__li">
+                            20:00 | <span class="escenario__artista">Deftones</span>
+                        </li>
+                        <li class="escenario__li">
+                            19:00 | <span class="escenario__artista">Limp Bizkit</span>
+                        </li>
+                        <li class="escenario__li">
+                            18:00 | <span class="escenario__artista">Papa Roach</span>
+                        </li>
+                        <li class="escenario__li">
+                            17:00 | <span class="escenario__artista">Lamb of God</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="escenario escenario--amarillo">
+                    <p class="escenario__titulo escenario__titulo--edm">Escenario EDM</p>
+
+                    <ul class="escenario__lista escenario__lista--amarillo">
+                        <li class="escenario__li">
+                            24:00 | <span class="escenario__artista">Paul Van Dyk</span>
+                        </li>
+                        <li class="escenario__li">
+                            22:00 | <span class="escenario__artista">Armin Van Buuren</span>
+                        </li>
+                        <li class="escenario__li">
+                            20:00 | <span class="escenario__artista">Above & Beyond</span>
+                        </li>
+                        <li class="escenario__li">
+                            19:00 | <span class="escenario__artista">Eric Prdyz</span>
+                        </li>
+                        <li class="escenario__li">
+                            18:00 | <span class="escenario__artista">Ferry Corsten</span>
+                        </li>
+                        <li class="escenario__li">
+                            17:00 | <span class="escenario__artista">Vini Vici</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="boletos" class="boletos">
+            
+        <h2 class="boletos__heading">Boletos</h2>
+
+        <div class="boletos__grid">
+            <div class="boleto boleto__simple">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-accessible" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4CB8B3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" />
+                    <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
+                </svg>
+
+                <h3 class="boleto__heading"> Pase simple</h3>
+                <p class="boleto__precio">100$</p>
+                <p class="boleto__texto">Incluye:</p>
+
+                <ul class="boleto__lista">
+                    <li class="boleto__enlace">valido por 1 día</li>
+                    <li class="boleto__enlace">Acceso a ambos escenarios</li>
+                    <li class="boleto__enlace">Comida y bebida</li>
+                </ul>
+
+                <a class="boleto__boton boleto__boton--simple" href="#">Comprar</a>
+            </div>
+
+            <div class="boleto boleto__premium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-3d-cube-sphere" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4CB8B3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M6 17.6l-2 -1.1v-2.5" />
+                    <path d="M4 10v-2.5l2 -1.1" />
+                    <path d="M10 4.1l2 -1.1l2 1.1" />
+                    <path d="M18 6.4l2 1.1v2.5" />
+                    <path d="M20 14v2.5l-2 1.12" />
+                    <path d="M14 19.9l-2 1.1l-2 -1.1" />
+                    <line x1="12" y1="12" x2="14" y2="10.9" />
+                    <line x1="18" y1="8.6" x2="20" y2="7.5" />
+                    <line x1="12" y1="12" x2="12" y2="14.5" />
+                    <line x1="12" y1="18.5" x2="12" y2="21" />
+                    <path d="M12 12l-2 -1.12" />
+                    <line x1="6" y1="8.6" x2="4" y2="7.5" />
+                </svg>
+
+                <h3 class="boleto__heading"> Pase Premium</h3>
+                <p class="boleto__precio">180$</p>
+                <p class="boleto__texto">Incluye:</p>
+
+                <ul class="boleto__lista">
+                    <li class="boleto__enlace">valido por 2 días</li>
+                    <li class="boleto__enlace">Acceso a ambos escenarios</li>
+                    <li class="boleto__enlace">Comida y bebida</li>
+                    <li class="boleto__enlace">Camisa del evento</li>
+                </ul>
+
+                <a class="boleto__boton" href="#">Comprar</a>
+            </div>
+
+            <div class="boleto boleto__VIP">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-aperture" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="12" r="9" />
+                    <line x1="3.6" y1="15" x2="14.15" y2="15" />
+                    <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)" />
+                    <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)" />
+                    <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)" />
+                    <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)" />
+                </svg>
+
+                <h3 class="boleto__heading"> Pase VIP</h3>
+                <p class="boleto__precio">250$</p>
+                <p class="boleto__texto">Incluye:</p>
+
+                <ul class="boleto__lista">
+                    <li class="boleto__enlace">valido por 2 días</li>
+                    <li class="boleto__enlace">Acceso a ambos escenarios</li>
+                    <li class="boleto__enlace">Comida y bebida</li>
+                    <li class="boleto__enlace">Camisa y gorra del evento</li>
+                    <li class="boleto__enlace">acceso a las areas VIP</li>
+                </ul>
+
+                <a class="boleto__boton boleto__boton--VIP" href="#">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h2 class="galeria__heading">Galería</h2>
+
+        <ul class="galeria__imagenes"></ul>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container contenedor">
+            <p class="footer__copy">
+                Todos los derechos Reservados Yeferson Mendoza - 2022 &copy;
+            </p>
+        </div>
+    </footer>
+
+    <script src="build/js/app.js"></script>
+</body>
+</html>

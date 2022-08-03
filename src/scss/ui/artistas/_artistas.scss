@@ -1,0 +1,89 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.artistas{
+    padding: 5rem 0;
+    background-color: v.$rosa;
+
+    &__heading{
+        color: v.$blanco;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    &__dia{
+        color: v.$blanco;
+        text-align: center;
+        font-size: 2.4rem;
+        margin: 3rem 0;
+    }
+
+    &__grid{
+        display: grid;
+
+        @include m.tablet { 
+            @include m.grid(2, 4rem);
+        } 
+    }
+}
+
+
+.escenario{
+    padding: 2rem 0;
+    &--amarillo{
+        background-color: v.$amarillo;
+    }
+    &--verde{
+        background-color: v.$verde;
+    }
+
+    &__titulo{
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+
+        &::after{
+            content: "";
+            display: block;
+            width: 20rem;
+            height: 10rem;
+            
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 1rem auto;
+        }
+
+        &--rock{
+            &::after{
+                background-image: url(../img/icono_rock.webp);
+            }
+        }
+        &--edm{
+            &::after{
+                background-image: url(../img/icono_edm.webp);
+            }
+        }
+    }
+
+    &__lista{
+
+        &--verde{
+            li:nth-child(odd){
+                background-color: darken(v.$verde, 10%);
+            }
+        }
+
+        &--amarillo{
+            li:nth-child(odd){
+                background-color: darken(v.$amarillo, 20%);
+            }
+        }
+    }
+
+    &__li{
+        padding: 2.5rem;
+        font-weight: 700;
+    }
+}
